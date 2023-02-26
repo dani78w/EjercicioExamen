@@ -39,7 +39,7 @@ fun Ejercicio9(navController: NavController) {
 
             var nombre = rememberSaveable { mutableStateOf("") }
             TextField(
-                label = { Text(text = "Nombre") },
+                label = { Text(text = "Jugador") },
                 value = nombre.value,
                 onValueChange = {
                     nombre.value = it;
