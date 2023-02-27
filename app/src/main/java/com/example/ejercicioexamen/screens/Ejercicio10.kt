@@ -58,10 +58,11 @@ fun Ejercicio10(navController:NavController){
 }
 
 fun lanzarRandom(navController: NavController){
-    var ranNum = Random.nextInt(1, 4)
+    var ranNum = Random.nextInt(1, 5)
     when (ranNum) {
         1 -> navController.navigate("Objeto")
         2 -> navController.navigate("Mercader")
         3 -> navController.navigate("Lucha")
+        4 -> navController.navigate("DialogFlow")
     }
 }
