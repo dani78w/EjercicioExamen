@@ -25,7 +25,7 @@ var vida = mutableStateOf(200)
 var mochilaTam = mutableStateOf(10)
 var mochila = mutableStateOf(mutableListOf(""))
 var mochilaPeso= mutableStateOf(0)
-var monedero = mutableStateOf(0)
+var monedero = mutableStateOf(12313)
 
 var comerceFlow = mutableStateOf(0)
 
