@@ -35,12 +35,9 @@ var partidasGanadasCiudad = mutableStateOf(-1)
 val paises: Map<String, Int> = mapOf( Pair("argentina", 40000000),
     Pair("españa", 46000000),
     Pair("uruguay", 3400000))
-var chatdict = mutableStateOf(mutableMapOf(
-    Pair(1,"Hola"),
-    Pair(1,"Hola"),
-    Pair(1,"Hola"),
-    Pair(2,"Nene"),
-    Pair(2,"Nene"),
-    Pair(2,"Nene"),
 
-))
+var respuestasbot = mutableListOf("Hola amigo","Si porsupuesto","No","No se que decir","No entiendo","No tengo ese objeto","No tengo ese objeto","No tengo ese objeto","No tengo ese objeto")
+var misRespuestas = mutableStateOf(mutableListOf("Hola amigo"))
+
+
+
