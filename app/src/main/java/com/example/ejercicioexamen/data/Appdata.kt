@@ -28,4 +28,6 @@ var mochilaPeso= mutableStateOf(0)
 var monedero = mutableStateOf(12313)
 
 var comerceFlow = mutableStateOf(0)
-
+var cityFLow = mutableStateOf(0)
+var enCiuadad = mutableStateOf(false)
+var partidasGanadasCiudad = mutableStateOf(-1)

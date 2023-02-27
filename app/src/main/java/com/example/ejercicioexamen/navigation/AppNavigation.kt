@@ -35,6 +35,9 @@ fun AppNavigation() {
         composable(AppScreens.Lucha.route) {
             Lucha(navController,Random.nextInt(0,5))
         }
+        composable(AppScreens.Ciudad.route) {
+            Ciudad(navController)
+        }
 
 
     }
