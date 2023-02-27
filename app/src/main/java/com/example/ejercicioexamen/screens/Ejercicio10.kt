@@ -33,7 +33,7 @@ fun Ejercicio10(navController:NavController){
                 contentScale = ContentScale.Crop
             )
             Button(modifier = Modifier
-                .fillMaxSize(),onClick = { navController.navigate("Objeto") }
+                .fillMaxSize(),onClick = { lanzarRandom(navController)}
                 , colors = ButtonDefaults.buttonColors(Color.Transparent)
             ) {
 
@@ -59,4 +59,9 @@ fun Ejercicio10(navController:NavController){
 
 fun lanzarRandom(navController: NavController){
     var ranNum = Random.nextInt(1, 4)
+    when (ranNum) {
+        1 -> navController.navigate("Objeto")
+        2 -> navController.navigate("Mercader")
+        3 -> navController.navigate("Lucha")
+    }
 }

@@ -1,17 +1,18 @@
 package com.example.ejercicioexamen.navigation
 
 import androidx.compose.runtime.Composable
+import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.ejercicioexamen.screens.*
+import kotlin.random.Random
 
 @Composable
 fun AppNavigation() {
 
     var navController = rememberNavController()
-    var currentSong = 0
-    NavHost(navController = navController, startDestination =AppScreens.Mercader.route) {
+    NavHost(navController = navController, startDestination = AppScreens.Ejercicio7.route) {
         composable(AppScreens.Ejercicio7.route) {
             Ejercicio7(navController)
         }
@@ -29,6 +30,10 @@ fun AppNavigation() {
         }
         composable(AppScreens.Mercader.route) {
             Mercader(navController)
+        }
+
+        composable(AppScreens.Lucha.route) {
+            Lucha(navController,Random.nextInt(0,5))
         }
 
 
