@@ -32,8 +32,9 @@ fun Ejercicio9(navController: NavController) {
     Surface(
         modifier = Modifier.fillMaxSize()
     ) {
-        var fuerzaRandom = Random.nextInt(10, 30)
-        var defensaRandom = Random.nextInt(1, 30)
+        //he cambiado los daños para que fuera mas facil de ver
+        var fuerzaRandom = Random.nextInt(20, 40)
+        var defensaRandom = Random.nextInt(20, 60)
         Column() {
 
 

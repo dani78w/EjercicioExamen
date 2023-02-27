@@ -12,7 +12,10 @@ import kotlin.random.Random
 fun AppNavigation() {
 
     var navController = rememberNavController()
-    NavHost(navController = navController, startDestination = AppScreens.Ejercicio7.route) {
+    NavHost(navController = navController, startDestination = AppScreens.DialojFlow.route) {
+        composable(AppScreens.DialojFlow.route) {
+            DialogFlow(navController)
+        }
         composable(AppScreens.Ejercicio7.route) {
             Ejercicio7(navController)
         }
